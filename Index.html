@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TikTok Downloader - Wilzz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #000;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #25d366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #20b954;
+    }
+
+    .info {
+      margin-top: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Download Video TikTok</h1>
+  <p>Masukkan link video TikTok yang ingin diunduh:</p>
+<p>WEBSITE DI BUAT WilzzOffc</p>
+  <input type="text" id="tiktokUrl" placeholder="https://www.tiktok.com/..." />
+
+  <br>
+  <button onclick="downloadVideo()">Download</button>
+
+  <div class="info">
+    Powered by WilzzOffc | Untuk hasil tanpa watermark
+  </div>
+
+  <script>
+    function downloadVideo() {
+      const url = document.getElementById("tiktokUrl").value.trim();
+      if (url === "") {
+        alert("Mohon masukkan link TikTok");
+        return;
+      }
+
+      // Redirect ke SnapTik dengan link video
+      window.open(`https://www.tiktok.com/wilzzstore12${encodeURIComponent(url)}`, "_blank");
+    }
+  </script>
+
+</body>
+</html>
